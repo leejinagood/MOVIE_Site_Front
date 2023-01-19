@@ -1,6 +1,6 @@
 /*
     *Update : 2023.01.17
-    *Author: 이현종, 박소영
+    *Author: 이현종, 박소영 ..
 */
 import './App.css';
 import './swiper.css';
