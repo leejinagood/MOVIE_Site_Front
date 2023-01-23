@@ -4,8 +4,23 @@
 */
 import './App.css';
 import './swiper.css';
+import React,{useState, useEffect} from 'react';
+import Axios from 'axios';
 
 function App() {
+
+    const [user, setUser] = useState ("");
+    useEffect ( ( ) => {
+    Axios.post ("/api/users").then ((response) => {
+        if(response.data) {
+            setUser (response.data);
+        } else {
+            alert ("failed to ");
+        }
+    });
+}, []);
+
+
   return (
     <div className="App">
       <header id="header">
@@ -15,11 +30,13 @@ function App() {
                     <h1>
                         <a href="#">
                             <h1>DAELIM BOX 리액트</h1>
+                            <h1>{user.login}</h1>
                         </a>    
                     </h1>
+                    
                     <nav class="nav">
                         <ul class="clearfix">
-                            <li><a href="#">로그인</a></li>
+                            <li>{user.login}</li>
                             <li><a href="#">회원가입</a></li>
                             <li><a href="#">내정보</a></li>
                         </ul>
