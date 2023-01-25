@@ -29,7 +29,7 @@ function App() {
                 <div class="header clearfix">
                     <h1>
                         <a href="#">
-                            <h1>DAELIM BOX 리액트</h1>
+                            <h1>DAELIM BOX</h1>
                             <h1>{user.login}</h1>
                         </a>    
                     </h1>
