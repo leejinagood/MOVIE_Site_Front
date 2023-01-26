@@ -53,6 +53,26 @@ function App() {
              });
             },[])
 
+    const [movie, setmovie] = useState("");
+    useEffect( () => {
+            // fetch(url,options) : HTTP 요청 함수
+            fetch('/user/movie')
+            .then(response => response.text())
+            .then(movie => {
+                setmovie(movie);
+             });
+            },[])
+
+    const [ticketing, setticketing] = useState("");
+    useEffect( () => {
+            // fetch(url,options) : HTTP 요청 함수
+            fetch('/user/ticketing')
+            .then(response => response.text())
+            .then(ticketing => {
+                setticketing(ticketing);
+             });
+            },[])
+
     return (
         <div className="App">
         <header id="header">
@@ -81,8 +101,8 @@ function App() {
                     <div class="row">
                         <div class="bm_right">
                             <ul>
-                                <li><a href="#">영화</a></li>
-                                <li><a href="#">예매</a></li>
+                                <li><a href="#">{movie}</a></li>
+                                <li><a href="#">{ticketing}</a></li>
                             </ul>
                             <div class="search">
                             <input type="text" placeholder="검색어 입력"></input>
