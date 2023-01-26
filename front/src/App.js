@@ -8,6 +8,9 @@ import React,{useState, useEffect} from 'react';
 import Axios from 'axios';
 
 function App() {
+    
+   
+
     // message 초기값을 ""으로 설정.
     const [message1, setMessage1] = useState("");
     // useEffect(함수,배열) : 컴포넌트가 화면에 나타났을(마운트)때 자동 실행.
@@ -64,7 +67,7 @@ return (
                     <nav class="nav">
                         <ul class="clearfix">
                             <li><a href="#">{message1}</a></li>
-                            <li><a href="#">{message2}</a></li>
+                            <li><a href="#" target="_blank">{message2}</a></li>
                             <li><a href="#">{message3}</a></li>
                         </ul>
                     </nav>    
@@ -128,3 +131,4 @@ return (
 }
 
 export default App;
+
