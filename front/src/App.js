@@ -8,20 +8,49 @@ import React,{useState, useEffect} from 'react';
 import Axios from 'axios';
 
 function App() {
+    // message 초기값을 ""으로 설정.
+    const [message1, setMessage1] = useState("");
+    // useEffect(함수,배열) : 컴포넌트가 화면에 나타났을(마운트)때 자동 실행.
+    useEffect( () => {
+          // fetch(url,options) : HTTP 요청 함수
+          fetch('/user/login')
+          .then(response => response.text())
+          .then(message1 => {
+          setMessage1(message1);
+          });
+          },[])
 
-    const [user, setUser] = useState ("");
-    useEffect ( ( ) => {
-    Axios.post ("/api/users").then ((response) => {
-        if(response.data) {
-            setUser (response.data);
-        } else {
-            alert ("failed to ");
-        }
-    });
-}, []);
+    const [message2, setMessage2] = useState("");
+    useEffect( () => {
+            // fetch(url,options) : HTTP 요청 함수
+            fetch('/user/member')
+            .then(response => response.text())
+            .then(message2 => {
+            setMessage2(message2);
+            });
+            },[])
 
+    const [message3, setMessage3] = useState("");
+    useEffect( () => {
+            // fetch(url,options) : HTTP 요청 함수
+            fetch('/user/mytip')
+            .then(response => response.text())
+            .then(message3 => {
+            setMessage3(message3);
+            });
+            },[])
+            
+    const [DaelimBox, setDaelimBox] = useState("");
+    useEffect( () => {
+                    // fetch(url,options) : HTTP 요청 함수
+                    fetch('/user/DaelimBox')
+                    .then(response => response.text())
+                    .then(DaelimBox => {
+                        setDaelimBox(DaelimBox);
+                    });
+                    },[])
 
-  return (
+return (
     <div className="App">
       <header id="header">
         <div class="container">
@@ -29,16 +58,14 @@ function App() {
                 <div class="header clearfix">
                     <h1>
                         <a href="#">
-                            <h1>DAELIM BOX</h1>
-                            <h1>{user.login}</h1>
+                            <h1>{DaelimBox}</h1>
                         </a>    
                     </h1>
-                    
                     <nav class="nav">
                         <ul class="clearfix">
-                            <li>{user.login}</li>
-                            <li><a href="#">회원가입</a></li>
-                            <li><a href="#">내정보</a></li>
+                            <li><a href="#">{message1}</a></li>
+                            <li><a href="#">{message2}</a></li>
+                            <li><a href="#">{message3}</a></li>
                         </ul>
                     </nav>    
                 </div>
