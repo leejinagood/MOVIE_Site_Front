@@ -88,7 +88,8 @@ function App() {
                             <ul class="clearfix">
                                 <li><a href="#">{message1}</a></li>
                                 <li><a href="#" target="_blank">{message2}</a></li>
-                                <li><a href="#">{message3}</a></li>
+                                <li><a href="#">{message3}</a></li> 
+
                             </ul>
                         </nav>    
                     </div>
