@@ -6,10 +6,19 @@ import './App.css';
 import './swiper.css';
 import React,{useState, useEffect} from 'react';
 import Axios from 'axios';
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+
+
+import { Routes, Route, Link, NavLink, BrowserRouter, useNavigate} from "react-router-dom";
+import Home from './pages/Home';
 
 function App() {
-    
+
+    //라우터
+    const navigate = useNavigate();
+    const navigateToPurchase = () => {
+      navigate("/Home");
+    };
+
 
     // message 초기값을 ""으로 설정.
     const [message1, setMessage1] = useState("");
@@ -73,7 +82,14 @@ function App() {
              });
             },[])
 
+
+    const [id,setId] = useState('');
+    const [pw,setPw] = useState('');
+    const [modal,setModal] = useState(false)
+    const [already,setAlready] = useState(false)
+
     return (
+
         <div className="App">
         <header id="header">
             <div class="container">
@@ -85,12 +101,18 @@ function App() {
                             </a>    
                         </h1>
                         <nav class="nav">
+                            
+                            <div>
                             <ul class="clearfix">
                                 <li><a href="#">{message1}</a></li>
-                                <li><a href="#" target="_blank">{message2}</a></li>
+                                <li><button  onClick={navigateToPurchase}>{message2}</button></li>
                                 <li><a href="#">{message3}</a></li> 
-
                             </ul>
+                            <Routes>          
+                            <Route path="/Home" element={<Home />}></Route>
+                            </Routes>
+                            </div>
+
                         </nav>    
                     </div>
                 </div>
@@ -114,6 +136,10 @@ function App() {
                 </div>
             </div>
         </section>
+        
+          
+        
+
         <div class="slider">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -124,6 +150,9 @@ function App() {
                                     <p>많은 사람들의 목숨을 앗아간 질병</p>
                                 </div>
                             </div>
+
+
+
                         </div>
                         <div class="swiper-slide ss2">
                             <div class="container">
@@ -142,12 +171,23 @@ function App() {
                             </div>
                         </div>
                     </div>
+                    
+
+
+
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+
+
+
+
+                   
+
                 </div>
             </div>
         </div>
+        
     );
 }
 
