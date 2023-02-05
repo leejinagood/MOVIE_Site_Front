@@ -11,6 +11,7 @@
   height: 63px; 
   border-bottom: 
   1px solid #c6c6c6;
+  margin-top: 1vw;
 }
 #banner {
   position: relative;
@@ -25,6 +26,9 @@ button{
   width: 1280px; 
   margin: 0 auto; 
   background: rgba(0,0,0,0); 
+}
+b{
+  text-decoration:underline;
 }
 /* 로우 영역 */
 .row {padding: 0 24px;}

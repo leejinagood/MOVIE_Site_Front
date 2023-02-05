@@ -35,7 +35,6 @@ function Home(){
                                     <p>많은 사람들의 목숨을 앗아간 질병</p>
                                 </div>
                             </div>
-
                         </div>
                         <div class="swiper-slide ss2">
                             <div class="container">
@@ -54,7 +53,6 @@ function Home(){
                             </div>
                         </div>
                     </div>
-                    
 
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>

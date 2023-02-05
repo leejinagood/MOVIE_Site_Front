@@ -85,6 +85,7 @@ const [already,setAlready] = useState(false)
 
     return (
         <div className="App">
+            
         <header id="header">
             <div class="container">
                 <div class="row">
@@ -97,17 +98,18 @@ const [already,setAlready] = useState(false)
                         <nav class="nav">
                             <div>
                             <ul class="clearfix">
-                                <li><button onClick={() => setComp(Login)}>{message1}</button></li>
-                                <li><button onClick={() => setComp(Signup)}>{message2}</button></li>
-                                <li><button onClick={() => setComp(About)}>{message3}</button></li> 
+                                <li><button onClick={() => setComp(Login)}><b>{message1}</b></button></li>
+                                <li><button onClick={() => setComp(Signup)}><b>{message2}</b></button></li>
+                                <li><button onClick={() => setComp(About)}><b>{message3}</b></button></li> 
                             </ul>
-                            <main children={comp} />
                             </div>
+
                         </nav>    
                     </div>
                 </div>
             </div>
         </header>
+        <main children={comp} />
         </div>
         
         
