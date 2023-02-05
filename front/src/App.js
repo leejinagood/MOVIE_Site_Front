@@ -15,11 +15,8 @@ import Signup from "./Signup";
 function App() {
     const [comp, setComp] = useState(Home);
 
-//message 초기값을 ""으로 설정.
 const [message1, setMessage1] = useState("");
-// useEffect(함수,배열) : 컴포넌트가 화면에 나타났을(마운트)때 자동 실행.
 useEffect( () => {
-      // fetch(url,options) : HTTP 요청 함수
       fetch('/user/login')
       .then(response => response.text())
       .then(message1 => {
@@ -29,7 +26,6 @@ useEffect( () => {
 
 const [message2, setMessage2] = useState("");
 useEffect( () => {
-        // fetch(url,options) : HTTP 요청 함수
         fetch('/user/member')
         .then(response => response.text())
         .then(message2 => {
@@ -39,7 +35,6 @@ useEffect( () => {
 
 const [message3, setMessage3] = useState("");
 useEffect( () => {
-        // fetch(url,options) : HTTP 요청 함수
         fetch('/user/mytip')
         .then(response => response.text())
         .then(message3 => {
@@ -49,7 +44,6 @@ useEffect( () => {
         
 const [DaelimBox, setDaelimBox] = useState("");
 useEffect( () => {
-        // fetch(url,options) : HTTP 요청 함수
         fetch('/user/DaelimBox')
         .then(response => response.text())
         .then(DaelimBox => {
@@ -59,7 +53,6 @@ useEffect( () => {
 
 const [movie, setmovie] = useState("");
 useEffect( () => {
-        // fetch(url,options) : HTTP 요청 함수
         fetch('/user/movie')
         .then(response => response.text())
         .then(movie => {
@@ -69,7 +62,6 @@ useEffect( () => {
 
 const [ticketing, setticketing] = useState("");
 useEffect( () => {
-        // fetch(url,options) : HTTP 요청 함수
         fetch('/user/ticketing')
         .then(response => response.text())
         .then(ticketing => {
