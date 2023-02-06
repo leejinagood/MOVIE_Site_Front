@@ -1,6 +1,4 @@
 import React from 'react';
-import './App.css';
-import './swiper.css';
 import './Home.css';
 
 function Home(){
