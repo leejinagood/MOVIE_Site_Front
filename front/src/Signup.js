@@ -1,7 +1,9 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import './Signup.css';
 
-const Signup = () => {
+function Signup() {
+
+  const Login = () => {}
   return (
     <div className="Signup">
 		<h2 className="form-box-title">회원가입</h2>
@@ -15,6 +17,6 @@ const Signup = () => {
       </form>
 	</div>
   )
-};
+}
 
 export default Signup;

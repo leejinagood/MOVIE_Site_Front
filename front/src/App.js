@@ -95,7 +95,6 @@ const [already,setAlready] = useState(false)
                                 <li><button onClick={() => setComp(About)}><b>{message3}</b></button></li> 
                             </ul>
                             </div>
-
                         </nav>    
                     </div>
                 </div>

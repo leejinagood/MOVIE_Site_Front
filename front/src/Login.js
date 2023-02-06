@@ -1,7 +1,7 @@
 import './Login.css';
 import React,{useState, useEffect} from 'react';
 
-const Login = () => {
+function Login() {
     return (
 	<div className="Login">
 		<h2 className="title">로그인</h2>
@@ -14,5 +14,7 @@ const Login = () => {
 
    )
 };
+
+
 
 export default Login;
