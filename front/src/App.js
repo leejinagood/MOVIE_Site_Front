@@ -1,20 +1,21 @@
 /*
-    *Update : 2023.01.17
+    *Update : 2023.02.10
     *Author: 이현종, 박소영 ..
 */
 import './App.css';
 import './swiper.css';
 import React,{useState, useEffect} from 'react';
 import Axios from 'axios';
-import { BrowserRouter, Link, Route, Router, Switch, useNavigate} from 'react-router-dom'; //React-Router import
+import { Link, Routes, Route, useNavigate} from 'react-router-dom'; //React-Router import
 import Home from "./Home";
 import About from "./About";
 import Login from "./Login";
 import Signup from "./Signup";
 
-function App() {
-    const [comp, setComp] = useState(Home);
 
+function App() {
+
+const [comp, setComp] = useState(Home);
 const [message1, setMessage1] = useState("");
 useEffect( () => {
       fetch('/user/login')
@@ -68,16 +69,14 @@ useEffect( () => {
             setticketing(ticketing);
          });
         },[])
-
-
+/*
 const [id,setId] = useState('');
 const [pw,setPw] = useState('');
 const [modal,setModal] = useState(false)
 const [already,setAlready] = useState(false)
-
+*/
     return (
         <div className="App">
-            
         <header id="header">
             <div class="container">
                 <div class="row">
@@ -102,8 +101,6 @@ const [already,setAlready] = useState(false)
         </header>
         <main children={comp} />
         </div>
-        
-        
     );
 }
 
