@@ -1,18 +1,24 @@
-import React from 'react';
+//import { render } from "@testing-library/react";
+import React from "react";
+import {Routes, Route, Link } from 'react-router-dom';
 import './Home.css';
+import Ticketing from './ticketing';
 
+// npm install react-router-dom@6
 function Home(){
   return(
-<div>
-  <section id="banner">
+  <div>
+    <section id="banner">
         <header>
             <div class="banner_menu">
                 <div class="container">
                     <div class="row">
                         <div class="bm_right">
                             <ul>
+                                <li><Link to="/Product1">
+                                    <a>예매</a>
+                                    </Link></li>
                                 <li><a href="#">영화</a></li>
-                                <li><a href="#">예매</a></li>
                             </ul>
                             <div class="search">
                             <input type="text" placeholder="검색어 입력"></input>
@@ -22,9 +28,12 @@ function Home(){
                     </div>
                 </div>
             </div>
+            <Routes>
+                <Route path="/Product1" component={Ticketing} />
+                <Route path="/" component={'Not found'}/>
+            </Routes>
         </header>
-    </section>
-        
+    </section>       
         <div class="slider">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -61,8 +70,9 @@ function Home(){
                 </div>
             </div>
         </div> 
-  )
-}
+        );
+  }
+
 /*
 function Home(){
   return(
@@ -139,5 +149,4 @@ function Home(){
   )
 }
 */
-
 export default Home;
