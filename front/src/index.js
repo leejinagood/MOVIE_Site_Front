@@ -1,20 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom'; // * BrowserRouter 불러오기
+//import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const rootNode = document.getElementById('root');
-// * App 을 BrowserRouter 로 감싸기
-ReactDOM.createRoot(rootNode).render(
-  <BrowserRouter>
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+root.render(
   <React.StrictMode>
-    <App/>
-  </React.StrictMode>
-</BrowserRouter>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
 );
 
 reportWebVitals();

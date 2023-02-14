@@ -15,8 +15,7 @@ function Home(){
                     <div class="row">
                         <div class="bm_right">
                             <ul>
-                                <li><Link to="/Product1">
-                                    <a>예매</a>
+                                <li><Link to="/ticketing">
                                     </Link></li>
                                 <li><a href="#">영화</a></li>
                             </ul>
