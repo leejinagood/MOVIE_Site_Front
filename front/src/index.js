@@ -7,20 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Product1(){
-  return(
-    <div>
-      <h2> 상품 1번 선택</h2>
-    </div>
-  )
-}
-
+const rootNode = document.getElementById('root');
 // * App 을 BrowserRouter 로 감싸기
-ReactDOM.render(
+ReactDOM.createRoot(rootNode).render(
   <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById('root')
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>
+</BrowserRouter>
 );
 
 reportWebVitals();

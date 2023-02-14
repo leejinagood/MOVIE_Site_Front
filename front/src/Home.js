@@ -29,7 +29,7 @@ function Home(){
                 </div>
             </div>
             <Routes>
-                <Route path="/Product1" component={Ticketing} />
+                <Route path="/ticketing" component={Ticketing} />
                 <Route path="/" component={'Not found'}/>
             </Routes>
         </header>
