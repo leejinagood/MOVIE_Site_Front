@@ -1,106 +1,75 @@
-import './Signup.css';
-import React, { useState } from 'react'  
+import React from 'react';
+import { Col, Button, Row, Container, Card, Form } from 'react-bootstrap';
 
 export default function Signup() {
-  let userId = document.querySelector('#userId');
-	let passwordForm = document.querySelector('#userPW');
-	let re_passwordForm = document.querySelector('#re_password');
-	
-	const [inputs, setInputs] = useState({
-   	    userId: '',
-		userPW: '',
-		re_password: ''
-    });
-
-  const onChange = (e) => { //input에 name을 가진 요소의 value에 이벤트를 걸었다
-    const { name, value } = e.target // 변수를 만들어 이벤트가 발생했을때의 value를 넣어줬다
-    const nextInputs = { ...inputs, [name]: value,}//스프레드 문법으로 기존의 객체를 복사한다.
-    setInputs(nextInputs); //만든 변수를 seInput으로 변경해준다.
-  }
-    function CheckPass(str){ //비밀번호 정규식
-      let reg1 =  /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{6,}$/;
-      return(reg1.test(str));
-    };
-   
-	function letsJoin() { //로그인 유효성 검사
-    if(inputs.userId===""){
-      alert("아이디를 입력해주세요!");
-      userId.focus();
-      return;
-    }else if(inputs.userPW===""){
-      alert("비밀번호를 입력해주세요!");
-      passwordForm.focus();
-      return;
-    }
-    else if(inputs.re_password===""){
-      alert("비밀번호 중복 확인을 입력해주세요!");
-      re_passwordForm.focus();
-      return;
-    }
-    else if(CheckPass(inputs.userPW) === false){
-      alert("비밀번호는 영문+숫자 6자를 조합하여 입력해주세요 !");
-      passwordForm.focus();
-      return;
-    }else if(inputs.re_password !==inputs.userPW){
-      alert("비밀번호가 동일하지 않습니다!");
-      re_passwordForm.focus();
-      return;
-    }else{
-      fetch("/register", { //원하는 주소 입력
-        method: 'post',
-        headers: {
-          'content-type': 'application/json'
-    },
-        body : JSON.stringify({
-        userId : inputs.userId,
-        userPW : inputs.userPW,
-      })
-        }).then(res => res.json())
-          .then(resonse => {
-          if(resonse===true){
-            window.location.replace("/원하는 주소");
-          }else{
-            alert("다시 시도해주세요");
-          }
-        });
-      }
-	  }
+    
   return (
-	<div className="userJoinOuter">
-		<div className="form-box login-register-form-element" id="userJoinInner">
-			<h2 className="form-box-title">계정 만들기</h2><br /><br />
-			<form className="form" id="registerFrm" name="register-page" >
-				<div className="form-row">
-					<div className="form-item">
-						<div className="form-input">
-							<input type="text" id="userId" name="userId" onChange={onChange}  placeholder="아이디" />
-							</div>
-					  </div>
-				  </div>
-				<div className="form-row">
-					<div className="form-item">
-						<div className="form-input">
-							<input type="password" id="userPW" name="userPW" onChange={onChange} placeholder="비밀번호"/>
-						</div>
-					</div>
-				</div>
-				<div className="form-row">
-					<div className="form-item">
-						<div className="form-input">
-							<input type="password" id="re_password" name="re_password" onChange={onChange} placeholder="비밀번호 확인"/>
-						</div>
-					</div>
-				</div>
-				<div className="form-row">
-					<div className="form-item">
-						<input type="button" className="button medium primary"  onClick={letsJoin} id="joinBtn" value="가입하기"/>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-  );
-}
+    <div>
+      <Container>
+        <Row className="vh-100 d-flex justify-content-center align-items-center">
+          <Col md={8} lg={6} xs={12}>
+            <Card className="px-4">
+              <Card.Body>
+                <div className="mb-3 mt-md-4">
+                  <h2 className="fw-bold mb-2 text-center text-uppercase ">
+                    회원가입
+                  </h2>
+                  <div className="mb-3">
+                    <Form>
+                      <Form.Group className="mb-3" controlId="Name">
+                        <Form.Label className="text-center">이름</Form.Label>
+                        <Form.Control type="text" placeholder="이름을 입력하세요" />
+                      </Form.Group>
+
+                      <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label className="text-center">
+                          이메일 주소
+                        </Form.Label>
+                        <Form.Control type="email" placeholder="이메일을 입력하세요" />
+                      </Form.Group>
+
+                      <Form.Group
+                        className="mb-3"
+                        controlId="formBasicPassword"
+                      >
+                        <Form.Label>비밀번호</Form.Label>
+                        <Form.Control type="password" placeholder="비밀번호를 입력하세요" />
+                      </Form.Group>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="formBasicPassword"
+                      >
+                        <Form.Label>비밀번호 확인</Form.Label>
+                        <Form.Control type="password" placeholder="비밀번호를 다시 입력해주세요" />
+                      </Form.Group>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="formBasicCheckbox"
+                      ></Form.Group>
+                      <div className="d-grid">
+                        <Button variant="primary" type="submit">
+                          회원가입
+                        </Button>
+                      </div>
+                    </Form>
+                    <div className="mt-3">
+                      <p className="mb-0  text-center">
+                        계정이 이미 있으신가요..?{' '}
+                        <a href="/" className="text-primary fw-bold">
+                          로그인
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );    
+};
 /*
 import React,{useState, useEffect} from 'react';
 import axios from 'axios';
