@@ -1,4 +1,5 @@
 //import { render } from "@testing-library/react";
+//import { Button } from "bootstrap";
 import React from "react";
 import {Routes, Route, Link } from 'react-router-dom';
 import './Home.css';
@@ -15,8 +16,7 @@ function Home(){
                     <div class="row">
                         <div class="bm_right">
                             <ul>
-                                <li><Link to="/ticketing">
-                                    </Link></li>
+                                <li><Link to="./ticketing">예매</Link></li>
                                 <li><a href="#">영화</a></li>
                             </ul>
                             <div class="search">
@@ -27,11 +27,10 @@ function Home(){
                     </div>
                 </div>
             </div>
-            <Routes>
-                <Route path="/ticketing" component={Ticketing} />
-                <Route path="/" component={'Not found'}/>
-            </Routes>
         </header>
+        <Routes>
+            <Route exact path="./ticketing" component={Ticketing}></Route>
+        </Routes>
     </section>       
         <div class="slider">
                 <div class="swiper-container">
