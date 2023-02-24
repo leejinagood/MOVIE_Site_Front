@@ -9,9 +9,10 @@
     padding-top: 3px;
     margin-left: 120px;
   }
-  
+
   h4{
-    padding: 5px 5px 5px 20px ;
+    padding: 5px 5px 5px 5px ;
+    clear: both;
   }
   
   .MovieMenuName{
@@ -35,7 +36,7 @@
     overflow-y: hidden;
     padding: 10px 10px 5px;
     background: bisque;
-    width: 815px;
+    width: 840px;
   }
   
   #row .items {

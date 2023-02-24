@@ -12,7 +12,7 @@ function Ticketing(){
             <h2>시간</h2>
           </section>
           <div className="MovieMenu">
-            <h4>예매율순</h4>
+          <h4>예매율순</h4>
             <hr />
             <div className="MovieList">
               <div id="row">
