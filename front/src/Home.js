@@ -6,6 +6,9 @@ import './Home.css';
 import Ticketing from './ticketing';
 
 // npm install react-router-dom@6
+// npm install @hookform/resolvers
+// npm install react-hook-form
+// npm install yup
 function Home(){
   return(
   <div>
