@@ -8,6 +8,8 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Ticketing from './ticketing';
+import Seat from './seat';
+import Login from './Login';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -17,6 +19,8 @@ root.render(
       <Routes>
         <Route index element={<App />} />
         <Route path="ticketing" element={<Ticketing />} />
+        <Route path="seat" element={<Seat />} />
+        <Route path="Login" element={<Login/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

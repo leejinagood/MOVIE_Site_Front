@@ -7,7 +7,10 @@
     float: left;
     text-align: center;
     padding-top: 3px;
-    margin-left: 120px;
+    margin-left: 105px;
+  }
+  h3{
+    font-size: 1.2em;
   }
 
   h4{
@@ -37,6 +40,7 @@
     padding: 10px 10px 5px;
     background: bisque;
     width: 840px;
+    display: inline-block;
   }
   
   #row .items {
@@ -57,7 +61,7 @@
   #row .items ul {
     border-radius: 3px;
     border: 1px solid #b5b5b5;
-    height: 450px;
+    height: 720px;
     overflow-y: scroll;
     padding: 3px 3px 8px;
     background: #fff;
@@ -98,16 +102,16 @@
   #row .date ul {
     border-radius: 3px;
     border: 1px solid #b5b5b5;
-    height: 450px;
+    height: 720px;
     overflow-y: scroll;
     padding: 3px 3px 8px;
     background: #fff;
   }
   
   #row .date ul li a {
-    display: block;
+    display: inline-block;
     overflow: hidden;
-    margin-top: 8px;
+    margin-top: 2px;
     padding: 3px;
     color:black;
     font-size:12px;
@@ -126,5 +130,5 @@
   }
   #row .Time{
     display:inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
   }
