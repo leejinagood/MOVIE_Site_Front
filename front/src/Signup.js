@@ -1,8 +1,9 @@
 import React from 'react';
 import { Col, Button, Row, Container, Card, Form } from 'react-bootstrap';
+import { Link, Route, Routes } from 'react-router-dom';
+import Login from './Login';
 
 export default function Signup() {
-    
   return (
     <div>
       <Container>
@@ -17,13 +18,12 @@ export default function Signup() {
                   <div className="mb-3">
                     <Form>
                       <Form.Group className="mb-3" controlId="Name">
-                        <Form.Label className="text-center">이름</Form.Label>
+                        <Form.Label className="text-center"></Form.Label>
                         <Form.Control type="text" placeholder="이름을 입력하세요" />
                       </Form.Group>
 
                       <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label className="text-center">
-                          이메일 주소
                         </Form.Label>
                         <Form.Control type="email" placeholder="이메일을 입력하세요" />
                       </Form.Group>
@@ -32,14 +32,14 @@ export default function Signup() {
                         className="mb-3"
                         controlId="formBasicPassword"
                       >
-                        <Form.Label>비밀번호</Form.Label>
+                        <Form.Label></Form.Label>
                         <Form.Control type="password" placeholder="비밀번호를 입력하세요" />
                       </Form.Group>
                       <Form.Group
                         className="mb-3"
                         controlId="formBasicPassword"
                       >
-                        <Form.Label>비밀번호 확인</Form.Label>
+                        <Form.Label></Form.Label>
                         <Form.Control type="password" placeholder="비밀번호를 다시 입력해주세요" />
                       </Form.Group>
                       <Form.Group
@@ -55,9 +55,9 @@ export default function Signup() {
                     <div className="mt-3">
                       <p className="mb-0  text-center">
                         계정이 이미 있으신가요..?{' '}
-                        <a href="/" className="text-primary fw-bold">
+                        <Link to="./Login" className="text-primary fw-bold">
                           로그인
-                        </a>
+                        </Link>
                       </p>
                     </div>
                   </div>
@@ -67,6 +67,9 @@ export default function Signup() {
           </Col>
         </Row>
       </Container>
+      <Routes>
+            <Route exact path="./Login" component={Login}></Route>
+        </Routes>
     </div>
   );    
 };

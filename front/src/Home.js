@@ -1,14 +1,9 @@
-//import { render } from "@testing-library/react";
-//import { Button } from "bootstrap";
 import React from "react";
 import {Routes, Route, Link } from 'react-router-dom';
 import './Home.css';
 import Ticketing from './ticketing';
 
 // npm install react-router-dom@6
-// npm install @hookform/resolvers
-// npm install react-hook-form
-// npm install yup
 function Home(){
   return(
   <div>
@@ -20,7 +15,7 @@ function Home(){
                         <div class="bm_right">
                             <ul>
                                 <li><Link to="./ticketing">예매</Link></li>
-                                <li><a href="#">영화</a></li>
+                                <li><a href="#" onClick={function(){alert("영화 페이지입니다.");}}>영화</a></li>
                             </ul>
                             <div class="search">
                             <input type="text" placeholder="검색어 입력"></input>
