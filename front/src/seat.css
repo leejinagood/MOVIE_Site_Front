@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Seat{
+    background-color: bisque;
+    width: 600px;
+    height: 800px;
+    margin: 0 auto;
+}

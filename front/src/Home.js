@@ -1,4 +1,3 @@
-//import { render } from "@testing-library/react";
 import React from "react";
 import {Routes, Route, Link } from 'react-router-dom';
 import './Home.css';
@@ -24,10 +23,8 @@ function Home(){
                     <div class="row">
                         <div class="bm_right">
                             <ul>
-                                <li><Link to="/Product1">
-                                    <a>예매</a>
-                                    </Link></li>
-                                <li><a href="#">영화</a></li>
+                                <li><Link to="./ticketing">예매</Link></li>
+                                <li><a href="#" onClick={function(){alert("영화 페이지입니다.");}}>영화</a></li>
                             </ul>
                             <div class="search">
                             <input type="text" placeholder="검색어 입력"></input>
@@ -37,11 +34,10 @@ function Home(){
                     </div>
                 </div>
             </div>
-            <Routes>
-                <Route path="/ticketing" component={Ticketing} />
-                <Route path="/" component={'Not found'}/>
-            </Routes>
         </header>
+        <Routes>
+            <Route exact path="./ticketing" component={Ticketing}></Route>
+        </Routes>
     </section>       
         <div class="slider">
                 <div class="swiper-container">

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0px;
+  }
+  
+  h1,h2{
+    float: left;
+    text-align: center;
+    padding-top: 3px;
+    margin-left: 105px;
+  }
+  h3{
+    font-size: 1.2em;
+  }
+
+  h4{
+    padding: 5px 5px 5px 5px ;
+    clear: both;
+  }
+  
+  .MovieMenuName{
+    background-color: gray;
+    height: 40px;
+    width: 840px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  .MovieMenu{
+    background-color: bisque;
+    height: 520px;
+    width:840px;
+    margin: 0 auto;
+  }
+  
+  #row {
+    white-space: nowrap;/* 가로스크롤시 중요한 속성 */
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 10px 5px;
+    background: bisque;
+    width: 840px;
+    display: inline-block;
+  }
+  
+  #row .items {
+    display: inline-block;
+    margin-left: 10px;
+    width: 200px;
+  }
+  
+  #row .items:first-child {
+    margin-left: 0;
+  }
+  
+  #row .items p {
+    margin-bottom: 8px;
+    text-indent: 7px;
+  }
+  
+  #row .items ul {
+    border-radius: 3px;
+    border: 1px solid #b5b5b5;
+    height: 720px;
+    overflow-y: scroll;
+    padding: 3px 3px 8px;
+    background: #fff;
+  }
+  
+  #row .items ul li a {
+    display: block;
+    overflow: hidden;
+    margin-top: 8px;
+    padding: 3px;
+    color:black;
+    font-size:12px;
+    text-decoration:none;
+  }
+  
+  #row .items ul li:first-child a {
+    margin-top: 3px;
+  }
+  
+  #row .items ul li.on a {
+    border: 1px solid #c9cccf;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #efefef;
+  }
+  #row .date {
+    display: inline-block;
+    margin-left: 10px;
+    width: 100px;
+  }
+  #row .date:first-child {
+    margin-left: 0;
+  }
+  #row .date p {
+    margin-bottom: 8px;
+    text-indent: 7px;
+  }
+  #row .date ul {
+    border-radius: 3px;
+    border: 1px solid #b5b5b5;
+    height: 720px;
+    overflow-y: scroll;
+    padding: 3px 3px 8px;
+    background: #fff;
+  }
+  
+  #row .date ul li a {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 2px;
+    padding: 3px;
+    color:black;
+    font-size:12px;
+    text-decoration:none;
+  }
+  
+  #row .date ul li:first-child a {
+    margin-top: 3px;
+  }
+  
+  #row .date ul li.on a {
+    border: 1px solid #c9cccf;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #efefef;
+  }
+  #row .Time{
+    display:inline-block;
+    margin-left: 15px;
+  }
