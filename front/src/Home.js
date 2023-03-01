@@ -6,10 +6,7 @@ import img1 from './poster01.jpg';
 import img2 from './poster02.jpg';
 import img3 from './poster03.jpg';
 import img4 from './poster04.jpg';
-import event1 from './event01.png';
-import event2 from './event02.jpg';
-import event3 from './event03.jpg';
-import event4 from './event04.jpg';
+
 
 
 // npm install react-router-dom@6
@@ -127,7 +124,7 @@ function Home(){
                 <div class="container">
                     <div class="row">
                         <div class="event">
-                            <h2>이벤트</h2>
+                            <h3>이벤트</h3>
                             <div class="event_left"></div>
                             <div class="event_right"></div>
                         </div>
