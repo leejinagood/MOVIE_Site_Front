@@ -6,10 +6,7 @@ import img1 from './poster01.jpg';
 import img2 from './poster02.jpg';
 import img3 from './poster03.jpg';
 import img4 from './poster04.jpg';
-import img1 from './event01.png';
-import img2 from './event02.jpg';
-import img3 from './event03.jpg';
-import img4 from './event04.jpg';
+
 
 
 
