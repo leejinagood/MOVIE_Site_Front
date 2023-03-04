@@ -142,4 +142,11 @@ img {
     
 }
 
+.event {overflow: hidden; padding: 100px 0;}
+.event img {display: block;}
+.event h2 {font-size: 30px; font-weight: 500; margin-bottom: 20px;}
+.event_left {float: left; width: 66%; margin-right: 2%;}
+.event_left .event_box1 {float: left; width: 50%;}
+.event_left .event_box2 {float: left; width: 50%;}
+.event_right {float: left; width: 32%;}
 
