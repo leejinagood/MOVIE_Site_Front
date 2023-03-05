@@ -50,29 +50,51 @@ b{
 .banner_menu .bm_right li.line {margin-right: 30px;}
 .banner_menu li.line:after {content: ''; width: 1px; height: 14px; background: #fff; position: absolute; right: -18px; top: 2px;}
 
-.search {
-  float: right;
-  position: relative;
-  width: 280px;
+
+.Login{
+  width: 400px;
+  height: 350px;
+  padding: 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+}
+
+h2{
+   font-size: 24px;
+    color: #00A4DC;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 input {
   width: 100%;
-  border: 1px solid #bbb;
-  border-radius: 8px;
-  padding: 10px 12px;
-  font-size: 14px;
+  height: 48px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  background-color: #F8F8F8;
 }
 
-img {
-  position : absolute;
-  width: 20px;
-  top: 13px;
-  right: 12px;
-  margin: 0;
+input::placeholder{
+  color: #D2D2D2;
 }
+
+
+ 
+.button{
+    color: #fff;
+    font-size: 16px;
+    background-color: #00A4DC;
+    margin-top: 20px;
+} 
+
 
 
 main{
   margin: 3vw;
 }
+
+
+
