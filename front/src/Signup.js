@@ -19,7 +19,7 @@ export default function Signup() {
                     <Form>
                       <Form.Group className="mb-3" controlId="Name">
                         <Form.Label className="text-center"></Form.Label>
-                        <Form.Control type="text" placeholder="이름을 입력하세요" />
+                        <Form.Control type="text" placeholder="이름을 입력하세요"/>
                       </Form.Group>
 
                       <Form.Group className="mb-3" controlId="formBasicEmail">

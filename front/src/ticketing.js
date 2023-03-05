@@ -1,32 +1,62 @@
 import React from "react";
 import './ticketing.css';
-import { Link, Route, Routes } from 'react-router-dom';
-import Seat from './seat';
  
 function Ticketing(){
   return (
       <div>
+        <div className="Image1st"></div>
+        <div className="Image2nd"></div>
         <div>
-          <section className="MovieMenuName">
-            <h2>영화</h2>
-            <h2>극장</h2>
-            <h2>날짜</h2>
-            <h2>시간</h2>
-          </section>
+          <div className="MovieMenuName">
+            <div className="Movie1stMenu"><h5>01 상영시간</h5></div>
+            <div className="Movie2ndMenu"><h5>02 인원/좌석</h5></div>
+            <div className="Movie3rdMenu"><h5>03 결제</h5></div>
+            <div className="Movie4thMenu"><h5>04 결제완료</h5></div>
+          </div>
           <div className="MovieMenu">
-          <h4>예매율순</h4>
-            <hr />
             <div className="MovieList">
+            <div className="MovieListMenu">
+                <select name="MovieListBox">
+                  <option value=" ">예매순</option>
+                  <option value=" ">관객순</option>
+                  <option value=" ">평점순</option>
+                  <option value=" ">예정작</option>
+                </select>
+              </div>
+              <div className="MovieListMenu">
+                <select name="MovieListBox">
+                  <option value=" ">전체</option>
+                  <option value=" ">스페셜관</option>
+                </select>
+              </div>
+              <div className="MovieListMenu2">
+                <select name="MovieListBox">
+                  <option value=" ">전체</option>
+                  <option value=" ">스페셜관</option>
+                  <option value=" ">13시이후</option>
+                  <option value=" ">19시이후</option>
+                  <option value=" ">심야</option>
+                </select>
+                <div className="SubMenu01">
+                  <a href="/">English</a>
+                </div>
+                <div className="SubMenu02">
+                  <a href="/">상영 시간표</a>
+                </div>
+                <div className="SubMenu03">
+                  <a href="/">예매 다시하기</a>
+                </div>
+              </div>
               <div id="row">
                 <div class="items">
                   <ul>
                     <li><a href="#none" onClick={function(){alert("더 퍼스트 슬램덩크가 선택 되었습니다.")}}>더 퍼스트 슬램덩크</a></li>
-                    <li class="on"><a href="#none" onClick={function(){alert("귀멸의 칼날-상현집결, 그리고 도공 마을로가 선택 되었습니다.")}}>귀멸의 칼날-상현집결, 그리고 도공 마을로</a></li>
+                    <li><a href="#none" onClick={function(){alert("귀멸의 칼날-상현집결, 그리고 도공 마을로가 선택 되었습니다.")}}>귀멸의 칼날-상현집결, 그리고 도공 마을로</a></li>
                     <li><a href="#none" onClick={function(){alert("타이타닉이 선택 되었습니다.")}}>타이타닉</a></li>
                     <li><a href="#none" onClick={function(){alert("카운트가 선택 되었습니다.")}}>카운트</a></li>
                     <li><a href="#none" onClick={function(){alert("마루이비디오가 선택 되었습니다.")}}>마루이비디오</a></li>
                     <li><a href="#none" onClick={function(){alert("서치2가 선택 되었습니다.")}}>서치2</a></li>
-                    <li><a href="#none" onClick={function(){alert("스즈메의 문단속이 선택 되었습니다.")}}>스즈메의문단속</a></li>
+                    <li class="on"><a href="#none" onClick={function(){alert("스즈메의 문단속이 선택 되었습니다.")}}>스즈메의문단속</a></li>
                     <li><a href="#none" onClick={function(){alert("어메이징오리스가 선택 되었습니다.")}}>어메이징오리스</a></li>
                     <li><a href="#none" onClick={function(){alert("두다다쿵-후후섬의비밀이 선택 되었습니다.")}}>두다다쿵-후후섬의비밀</a></li>
                     <li><a href="#none" onClick={function(){alert("아바타-물의길이 선택 되었습니다.")}}>아바타-물의길</a></li>
@@ -108,15 +138,17 @@ function Ticketing(){
                   <p><button onClick={function(){alert("10시 40분으로 예약되었습니다.");}}>10:40</button> 164석 <button onClick={function(){alert("15시 40분으로 예약되었습니다.");}}>15:40</button> 164석 <button onClick={function(){alert("19시 35분으로 예약되었습니다.");}}>19:35</button> 164석</p>
                   <p><button onClick={function(){alert("20시 40분으로 예약되었습니다.");}}>20:40</button> 132석 <button onClick={function(){alert("21시 50분으로 예약되었습니다.");}}>21:50</button> 132석 <button onClick={function(){alert("23시 15분으로 예약되었습니다.");}}>23:15</button> 164석</p>
                   <br /><br /><br /><br /><br /><br /><br /><br />
-                  <Link to="./seat"><button>이동</button></Link>
                 </div>
               </div>
             </div>
+            <div className="MovieResult">
+              <div className="MovieImage"></div>
+              <div className="MovieExplanation"></div>
+            </div>
+            <div className="Image3rd"></div>
+            <div className="Image4th"></div>
           </div>
         </div>
-        <Routes>
-            <Route exact path="./seat" component={Seat}></Route>
-        </Routes>
       </div>
   );
 };

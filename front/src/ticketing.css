@@ -3,11 +3,10 @@
     padding: 0px;
   }
   
-  h1,h2{
-    float: left;
+  h2,h5{
     text-align: center;
-    padding-top: 3px;
-    margin-left: 105px;
+    color: violet;
+    padding-top: 5px;
   }
   h3{
     font-size: 1.2em;
@@ -17,20 +16,159 @@
     padding: 5px 5px 5px 5px ;
     clear: both;
   }
+
+  .Image1st{
+    background: url(../img/car.png) no-repeat center center; 
+    background-size: cover;
+    width: 150px;
+    height: 300px;
+    float: left;
+    margin: 20px;
+    margin-left: 335px;
+  }
+
+  .Image2nd{
+    background: url(../img/card.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 150px;
+    height: 300px;
+    float: right;
+    margin: 20px;
+    margin-right: 335px;
+  }
+  
+  .Image3rd{
+    background: url(../img/movie01.jpg) no-repeat center center; 
+    background-size: cover;
+    height: 150px;
+    margin-top: 50px;
+  }
+
+  .Image4th{
+    background: url(../img/Samsungfire.png) no-repeat center center; 
+    background-size: cover;
+    height: 180px;
+    margin-top: 50px;
+  }
+
+  .MovieImage{
+    background: url(../img/Poster.jpg) no-repeat center center; 
+    background-size: cover;
+    height: 200px;
+    width: 130px;
+    margin-top: 35px;
+    display: inline-block;
+  }
+  .MovieExplanation{
+    background: url(../img/Movie.png) no-repeat center center; 
+    height: 200px;
+    width: 710px;
+    margin-top: 35px;
+    display: inline-block;
+  }
   
   .MovieMenuName{
-    background-color: gray;
     height: 40px;
     width: 840px;
     margin: 0 auto;
-    margin-top: 30px;
+    background-color: black;
   }
-  
+  .Movie1stMenu{
+    height: 40px;
+    width: 210px;
+    background: red;
+    border: 1px solid gray;
+    display: inline-block;
+  }
+  .Movie2ndMenu{
+    height: 40px;
+    width: 210px;
+    background: whitesmoke;
+    border: 1px solid gray;
+    display: inline-block;
+  }
+  .Movie3rdMenu{
+    height: 40px;
+    width: 210px;
+    background: whitesmoke;
+    border: 1px solid gray;
+    display: inline-block;
+  }
+  .Movie4thMenu{
+    height: 40px;
+    width: 210px;
+    background: whitesmoke;
+    border: 1px solid gray;
+    display: inline-block;
+  }
   .MovieMenu{
-    background-color: bisque;
+    background-color: white;
     height: 520px;
     width:840px;
     margin: 0 auto;
+  }
+
+  .MovieListMenu{
+    border: 1px solid gray;
+    padding: 10px;
+    width: 210px;
+    background-color: white;
+    display: inline-block;
+  }
+  .MovieListMenu2{
+    border: 1px solid gray;
+    padding: 10px;
+    width: 420px;
+    background-color: white;
+    display: inline-block;
+  }
+
+  .SubMenu01{
+    display: inline-block;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 10%;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+  }
+
+  .SubMenu02{
+    display: inline-block;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 10%;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+  }
+
+  .SubMenu03{
+    display: inline-block;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 10%;
+    width: 115px;
+    height: 25px;
+    text-align: center;
+  }
+  a:link{
+    color: black;
+    text-decoration: none;
+  }
+
+  a:visited{
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: black;
+    text-decoration: none;
+  }
+
+  a:active{
+    color: black;
   }
   
   #row {
@@ -38,9 +176,10 @@
     overflow-x: auto;
     overflow-y: hidden;
     padding: 10px 10px 5px;
-    background: bisque;
+    background: rgb(187, 187, 187);
     width: 840px;
     display: inline-block;
+    border: 1px solid gray;
   }
   
   #row .items {
@@ -70,7 +209,7 @@
   #row .items ul li a {
     display: block;
     overflow: hidden;
-    margin-top: 8px;
+    margin-top: 2px;
     padding: 3px;
     color:black;
     font-size:12px;
@@ -96,7 +235,7 @@
     margin-left: 0;
   }
   #row .date p {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     text-indent: 7px;
   }
   #row .date ul {
