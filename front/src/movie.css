@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+font{
+    margin: 25px;
+}
+
+.MovieChart{
+    height: 1600px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ChartMenu{
+    margin-left: 10px;
+}
+
+.ChartHeader{
+    float: right;
+    margin-top: 25px;
+}
+
+.Button{
+    border: 1px solid black;
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+.PosterMenu{
+    margin-left: 40px;
+    margin-top: 5px;
+    display: inline-block;
+
+}
+
+.Poster01{
+    background: url(../img/Poster.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  .Poster02{
+    background: url(../img/Poster2.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  .Poster03{
+    background: url(../img/Poster3.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+
+  .Poster04{
+    background: url(../img/Poster04.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+
+  .Poster05{
+    background: url(../img/Poster05.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+
+  .Poster06{
+    background: url(../img/Poster06.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+
+  .Poster07{
+    background: url(../img/Poster07.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  .Poster08{
+    background: url(../img/Poster08.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  .Poster09{
+    background: url(../img/Poster09.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  .Poster10{
+    background: url(../img/Poster10.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  .Poster11{
+    background: url(../img/Poster11.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+
+  .MoviePoster{
+    background: url(../img/movie02.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 200px;
+    height: 390px;
+    margin-top: 5px;
+  }
+  .MoviePoster2{
+    background: url(../img/movie03.jpg) no-repeat center center; 
+    background-size: cover;
+    width: 1100px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+
+  .MovieTier{
+    margin-top: 10px;
+    width: 200px;
+    height: 25px;
+    background-color:crimson;
+    margin-left: 25px;
+    text-align: center;
+  }
+
+  .MovieTier2{
+    margin-top: 10px;
+    width: 200px;
+    height: 25px;
+    background-color:dimgrey;
+    margin-left: 25px;
+    text-align: center;
+  }
+
+  .TierFont{
+    font-size: 0.9em;
+    color: azure;
+  }
+
+  a:link{
+    color: violet;
+    text-decoration: none;
+  }
+
+  a:visited{
+    color: violet;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: violet;
+    text-decoration: none;
+  }
+
+  a:active{
+    color: violet;
+  }

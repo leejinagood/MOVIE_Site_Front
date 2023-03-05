@@ -2,6 +2,9 @@ import React from "react";
 import {Routes, Route, Link } from 'react-router-dom';
 import './Home.css';
 import Ticketing from './ticketing';
+<<<<<<< HEAD
+import Movie from "./movie";
+=======
 import img1 from './poster01.jpg';
 import img2 from './poster02.jpg';
 import img3 from './poster03.jpg';
@@ -11,6 +14,7 @@ import event2 from './event02.jpg';
 import event3 from './event03.jpg';
 import event4 from './event04.jpg';
 
+>>>>>>> 8e15e58671edcbd8b72ae823080dc13b38619647
 
 // npm install react-router-dom@6
 function Home(){
@@ -24,7 +28,7 @@ function Home(){
                         <div class="bm_right">
                             <ul>
                                 <li><Link to="./ticketing">예매</Link></li>
-                                <li><a href="#" onClick={function(){alert("영화 페이지입니다.");}}>영화</a></li>
+                                <li><Link to="./movie">영화</Link></li>
                             </ul>
                             <div class="search">
                             <input type="text" placeholder="검색어 입력"></input>
@@ -37,6 +41,7 @@ function Home(){
         </header>
         <Routes>
             <Route exact path="./ticketing" component={Ticketing}></Route>
+            <Route exact path="./movie" component={Movie}></Route>
         </Routes>
     </section>       
         <div class="slider">
