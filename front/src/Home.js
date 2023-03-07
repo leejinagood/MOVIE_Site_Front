@@ -75,66 +75,7 @@ function Home(){
 
                 </div>
             </div>
-        <section id ="movie_poster">
-            <div class="movie_poster">
-             <div class="posrt1">
-                <div>
-                    <div class = "poster">
-                    <figure>
-                    <img src={img1}/>
-                    </figure>
-                    <div class="rank"><strong>1</strong></div>
-                    </div>
-                    <div class = "infor"></div>
-                </div>
-             </div>
-             <div class="posrt2">
-                <div>
-                    <div class = "poster">
-                    <figure>
-                    <img src={img2}/>
-                    </figure>
-                    <div class="rank"><strong>2</strong></div>
-                    </div>
-                    <div class = "infor"></div>
-                </div>
-             </div>
-             <div class="posrt3">
-                <div>
-                    <div class = "poster">
-                    <figure>
-                    <img src={img3}/>
-                    </figure>
-                    <div class="rank"><strong>3</strong></div>
-                    </div>
-                    <div class = "infor"></div>
-                </div>
-             </div>
-             <div class="posrt4">
-                <div>
-                    <div class = "poster">
-                    <figure>
-                    <img src={img4}/>
-                    </figure>
-                    <div class="rank"><strong>4</strong></div>
-                    </div>
-                    <div class = "infor"></div>
-                </div>
-             </div>
 
-            </div>
-            </section>
-            <section id ="event">
-                <div class="container">
-                    <div class="row">
-                        <div class="event">
-                            <h2>이벤트</h2>
-                            <div class="event_left"></div>
-                            <div class="event_right"></div>
-                        </div>
-                    </div>
-                </div>
-             </section>
             
         </div> 
         
