@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Ticketing from './ticketing';
 import Login from './Login';
 import Movie from './movie';
+import Slider from './slider';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -21,6 +22,7 @@ root.render(
         <Route path="ticketing" element={<Ticketing />} />
         <Route path="movie" element={<Movie />} />
         <Route path="Login" element={<Login/>} />
+        <Route path="Slider" element={<Slider/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
