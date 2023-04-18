@@ -13,6 +13,7 @@ import event3 from './point.jpg';
 import event4 from './dream.jpg';
 import Slider from "./slider";
 
+// npm i
 // npm install react-router-dom@6
 // npm install swiper --save
 function Home(){

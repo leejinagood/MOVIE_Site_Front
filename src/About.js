@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
-import './swiper.css';
+import './about.css';
+import Profile from './profile';
 
 const About = () => {
   return (
-  <div>내정보 페이지</div>
+  <div><h5 className='about-user'>내정보 페이지</h5>
+      <Profile />
+    </div>
   )
 };
 

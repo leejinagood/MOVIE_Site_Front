@@ -11,6 +11,8 @@ import Ticketing from './ticketing';
 import Login from './Login';
 import Movie from './movie';
 import Slider from './slider';
+import Profile from './profile';
+import UserProfile from './userProfile';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -23,6 +25,8 @@ root.render(
         <Route path="movie" element={<Movie />} />
         <Route path="Login" element={<Login/>} />
         <Route path="Slider" element={<Slider/>} />
+        <Route path="Profile" element={<Profile/>} />
+        <Route path="userProfile" element={<UserProfile/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
